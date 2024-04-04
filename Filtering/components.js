@@ -14,7 +14,7 @@ const restaurantModal = (restaurant, menu) => {
                   <p>${company}</p>`;
   courses.forEach((course) => {
     const {price} = course;
-    const existingPrice = price ? price : 'Ei hintatietoa.';
+    const existingPrice = price ? price : 'Ei hintatietoa';
     menuHTML += `<li>${course.name} -  ${existingPrice}</li>`;
   })
   menuHTML += `<form method="dialog">
